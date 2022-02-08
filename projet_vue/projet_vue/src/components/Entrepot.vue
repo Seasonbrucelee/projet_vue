@@ -15,7 +15,7 @@ import { ref } from 'vue'
     </thead>
 
     <tbody id="app">
-      <tr v-for="entrepot in entrepots">
+      <tr v-bind:key="entrepot in entrepots">
         <td>{{ entrepot.Marque }}</td>
         <td>{{ entrepot.Couleur }}</td>
         <td>{{ entrepot.Stock }}</td>
